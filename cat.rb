@@ -1,16 +1,9 @@
-class Student
-  def initialize(name)
+class Cat
+  attr :name, :preffered_food, :meal_type
+  def initialize(name, preffered_food, meal_type)
     @name = name
-  end
-  def learn
-    "I get it!"
-  end
-end
-
-class Instractor
-  def initilize(name)
-  end
-  def teach
-    "Everything in Ruby is an Object."
+    @preffered_food = preffered_food
+    @meal_type = meal_type
   end
 end
+#
