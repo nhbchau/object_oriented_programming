@@ -27,5 +27,10 @@ class Cat
     end
   end
 
-  
+  def meow
+    @meow
+     "My name is #{@name} and I eat #{@preffered_food} at #{eats_at}"
+  end
 end
+
+#codes works for other cats I created later. 
