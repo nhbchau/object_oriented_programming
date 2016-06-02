@@ -17,5 +17,15 @@ class Cat
   def meal_time
     @meal_time
   end
+
+  def eats_at
+    @meal_time
+     if @meal_time > 12
+      "#{@meal_time - 12}PM"
+     else
+      "#{@meal_time}AM"
+    end
+  end
+
+  
 end
-#
