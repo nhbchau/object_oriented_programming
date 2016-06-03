@@ -21,7 +21,7 @@ class Paperboy
 
   def report
 
-    "I'm #{@name}, I've delivered #{@experience} papers and I've earned $#{@earnings} so far!" #$#{deliver}
+    "I'm #{@name}, I've delivered #{@experience} papers and I've earned $#{@earnings} so far!"
   end
 
 
