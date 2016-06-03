@@ -1,3 +1,4 @@
+
 class Paperboy
   def initialize(name, experience, side, earnings)
     @name = name
@@ -18,5 +19,12 @@ class Paperboy
      return pay
   end
 
+  def report
+
+    "I'm #{@name}, I've delivered #{@experience} papers and I've earned $#{@earnings} so far!" #$#{deliver}
+  end
+
 
 end
+
+#=> "I'm Tom, I've delivered 1300 papers and I've earned $700.0 so far!"
