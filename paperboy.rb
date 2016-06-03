@@ -2,9 +2,9 @@
 class Paperboy
   def initialize(name, experience, side, earnings)
     @name = name
-    @experience = experience
+    @experience = 0
     @side = side
-    @earnings = earnings
+    @earnings = 0
   end
 
   def quota
@@ -12,10 +12,13 @@ class Paperboy
   end
 
   def deliver(start_address, end_address)
-     num_house = end_address - start_address
+     num_house = (end_address - start_address)/2
      @experience += num_house
-     pay = num_house.to_f * 0.25
-     @earnings = @earnings + pay
+  if @experience > quota
+     (@experience - 50 )
+     #pay = num_house.to_f * 0.25
+     @earnings = @earnings + num_house * 0.25#pay
+
      return pay
   end
 
